@@ -22,7 +22,7 @@ jobs:
           output:
             "results/"
           console_output: "cli"
-          custom_query: "/custom_query"
+          custom_query: "custom_query"
       - uses: actions/upload-artifact@v3
         if: always()
         with:
