@@ -1,0 +1,12 @@
+{
+  "id": "4ab349d6-1c3d-42a5-ae4d-6034a98e0a5e",
+  "queryName": "*custom* S3 Bucket Without Versioning",
+  "severity": "MEDIUM",
+  "category": "Data at risk",
+  "descriptionText": "S3 bucket should have versioning enabled",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#versioning",
+  "platform": "Terraform",
+  "descriptionID": "7614ce3b",
+  "cloudProvider": "aws",
+  "name": "custom_aws_s3_bucket_without_versioning"
+}
