@@ -19,12 +19,13 @@ jobs:
           path:
             "test,terraform"
           format:
-            "json,sarif"
+            "sarif"
           output:
             "results/"
           console_output: "cli"
           custom_query: "custom_query"
           generate_rego_input: "blablab.json"
+          show_annotations: false
       - uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
