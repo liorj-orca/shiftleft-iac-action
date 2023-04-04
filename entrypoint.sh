@@ -113,6 +113,9 @@ function set_iac_scan_flags() {
   if [ "${INPUT_CUSTOM_QUERY}" ]; then
     SCAN_FLAGS+=(--custom-query "${INPUT_CUSTOM_QUERY}")
   fi
+  if [ "${INPUT_GENERATE_REGO_INPUT}" ]; then
+    SCAN_FLAGS+=(--generate_rego_input "${INPUT_GENERATE_REGO_INPUT}")
+  fi
 }
 
 function set_env_vars() {
