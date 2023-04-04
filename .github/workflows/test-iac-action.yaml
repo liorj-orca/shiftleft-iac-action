@@ -23,6 +23,7 @@ jobs:
             "results/"
           console_output: "cli"
           custom_query: "custom_query"
+          generate_rego_input: "blablab.json"
       - uses: actions/upload-artifact@v3
         if: always()
         with:
