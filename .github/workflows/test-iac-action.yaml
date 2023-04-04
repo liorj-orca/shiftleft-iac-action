@@ -18,7 +18,7 @@ jobs:
           path:
             "test,terraform"
           format:
-            "json"
+            "json,sarif"
           output:
             "results/"
           console_output: "cli"
