@@ -110,6 +110,9 @@ function set_iac_scan_flags() {
   if [ "${CONSOLE_OUTPUT_FOR_JSON}" ]; then
     SCAN_FLAGS+=(--console-output="${CONSOLE_OUTPUT_FOR_JSON}")
   fi
+  if [ "${INPUT_CUSTOM_QUERY}" ]; then
+    SCAN_FLAGS+=(--custom-query "${INPUT_CUSTOM_QUERY}")
+  fi
 }
 
 function set_env_vars() {
