@@ -28,4 +28,6 @@ jobs:
         if: always()
         with:
           name: orca-results
-          path: results/
+          path: |
+            results/
+            blablab.json
