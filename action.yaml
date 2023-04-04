@@ -85,3 +85,6 @@ inputs:
     description: "show github annotations on pull requests"
     required: false
     default: "true"
+  custom_query:
+    description: "paths to custom queries (comma-separated)"
+    required: false
