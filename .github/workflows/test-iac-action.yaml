@@ -26,9 +26,10 @@ jobs:
           custom_query: "custom_query"
           generate_rego_input: "blablab.json"
           show_annotations: false
-      - uses: github/codeql-action/upload-sarif@v2
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        if: always()
         with:
-          # Path to SARIF file relative to the root of the repository
           sarif_file: results/iac.sarif
       - uses: actions/upload-artifact@v3
         if: always()
