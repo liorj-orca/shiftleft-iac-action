@@ -114,7 +114,7 @@ function set_iac_scan_flags() {
     SCAN_FLAGS+=(--custom-query "${INPUT_CUSTOM_QUERY}")
   fi
   if [ "${INPUT_GENERATE_REGO_INPUT}" ]; then
-    SCAN_FLAGS+=(--generate_rego_input "${INPUT_GENERATE_REGO_INPUT}")
+    SCAN_FLAGS+=(--generate-rego-input "${INPUT_GENERATE_REGO_INPUT}")
   fi
 }
 
