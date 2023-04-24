@@ -25,7 +25,7 @@ jobs:
           output:
             "results/"
           console_output: "cli"
-          custom_query: "custom_query"
+          custom_controls: "custom_query"
           generate_rego_input: "blablab.json"
           show_annotations: false
       - name: Upload SARIF file
